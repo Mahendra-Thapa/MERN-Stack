@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+          margin: 10px;
+        }
+  .bx{
+    height: 200px;
+    max-width: 360px;
+    border: 1px solid black;
+     display: flex;
+     /* justify-content: space-between;
+     flex-direction: row-reverse; */
+     /* justify-content: center;
+     align-items: center ; */
+
+     /* For Single row 
+     align-items: end; */
+
+     /* for Multipe row to wrap of boxes */
+     align-content: start;
+
+     /* gap: 10px;
+     column-gap: 10px;
+     row-gap: 20px; */
+
+     /* for making responsive of more table with in parent table */
+     flex-wrap: wrap;
+     
+  }
+  .bx-1{
+    background-color: red;
+    /* it is used for grow or tke more space then other boxes 
+    flex-grow: 2;*/
+    order: 4;
+  }
+  .bx-2{
+    background-color: rgb(43, 255, 0);
+    /* it is used for grow or tke more space then other boxes */
+    flex-shrink: 4;
+    orphans: 3;
+  }
+  .bx-3{
+    background-color: rgb(0, 47, 255);
+    order: 5;
+  }
+  .bx-4{
+    background-color: rgb(246, 255, 0);
+    order: 1;
+  }
+  .bx-5{
+    background-color: rgb(0, 200, 255);
+    order: 2;
+  }
+  .box{
+    width: 80px;
+  }
+    </style>
+</head>
+<body>
+    <div class="bx">
+  <div class="bx-1 box">
+    <h3>BOX-1</h3>
+  </div>
+  <div class="bx-2 box">
+    <h3>BOX-2</h3>
+  </div>
+  <div class="bx-3 box">
+    <h3>BOX-3</h3>
+  </div>
+  <div class="bx-4 box">
+    <h3>BOX-4</h3>
+  </div>
+  <div class="bx-5 box">
+    <h3>BOX-5</h3>
+  
+    </div>
+</body>
+</html>

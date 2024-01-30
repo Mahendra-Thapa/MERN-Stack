@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+           margin: 20px;
+        }
+         /*
+        .main-bx-1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media(max-width:700px){
+            .main-bx-1{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media(max-width:500px){
+            .main-bx-1{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        } */
+   
+        .main-bx-2{
+            max-width: 600px;
+            height: 300px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-areas: "header header header header"
+          "content1 content1 content1 sidebar"
+          "content2 content2 content2  sidebar"
+          "footer footer footer footer" ;
+
+        }
+
+        .bx-1{
+            background-color: blue;
+            grid-area: header;
+        }
+        .bx-2{
+            background-color: red;
+            grid-area: content1;
+        }
+        .bx-3{
+            background-color: aqua;
+            grid-area: content2;
+        }
+        .bx-4{
+            background-color: blanchedalmond;
+            grid-area: sidebar;
+        }
+        .bx-5{
+            background-color: rgb(171, 104, 22);
+            grid-area: footer;
+        }
+
+
+   
+   </style> 
+</head>
+<body>
+    <!-- <div class="main-bx-1">
+        <div class="bx-1">
+            <img src="iphone.jpg" alt="">
+        </div>
+        <div class="bx-2">
+            <img src="iphone.jpg" alt="">
+        </div>
+        <div class="bx-3">
+            <img src="iphone.jpg" alt="">
+        </div>
+        <div class="bx-4">
+            <img src="iphone.jpg" alt="">
+        </div>
+        <div class="bx-5">
+            <img src="iphone.jpg" alt="">
+        </div>
+        <div class="bx-6">
+            <img src="iphone.jpg" alt="">
+        </div>
+    </div> -->
+<br><br><hr><br><br>
+
+<div class="main-bx-2">
+    <div class="bx-1">
+        <h3>logo</h3>
+    </div>
+    <div class="bx-2">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim fugiat voluptatibus debitis, soluta iure et, possimus eos aliquam pariatur quisquam minima, esse in porro distinctio culpa minus aspernatur doloribus!</p>
+    </div>
+    <div class="bx-3">
+        <h3>Details</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione vero quia deserunt, tenetur earum delectus,</p>
+    </div>
+    <div class="bx-4">
+        <h3>SideBar</h3>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="bx-5">
+        <h3>fotter</h3>
+        <p>all rights reserved</p>
+    </div>
+</div>
+</body>
+</html>
